@@ -1,5 +1,7 @@
 ---
 layout: default
+titleAfter: "Diary of an ambitiour, West-Indian Woman-in-the-Making"
+meta: "A blog about the successes and struggles of an all-round minority along her journey in life."
 ---
 {% for post in site.posts limit:5 %}
 <div class="index-fullview">
@@ -14,7 +16,7 @@ layout: default
                 <div class="entry-header">
                     <div class="category">
                         <span class="catindex">
-                            <a href="{{site.baseurl}}/categories/{{post.categories | first}}.html">{{post.categories | first}}</a>
+                            <a href="{{site.baseurl}}/categories/{{post.categories | first}}">{{post.categories | first}}</a>
                         </span>
                     </div>
                     <h2 class="entry-title">
@@ -23,7 +25,7 @@ layout: default
                     <div class="post-meta" style="padding: 10px 0 5px; overflow: hidden;">
                         <span class="meta-info">
                             {{post.date | date: "%-d %B %Y" }} by
-                            <a href="/index.php?page_id=13">
+                            <a href="{{site.baseurl}}/about">
                             {{site.author}}</a>
                             <a href=""> 
                                 <i class="fa fa-comments"></i> <!-- comments -->
@@ -54,7 +56,7 @@ layout: default
 </div>
 {% endfor %}
 <div class="archive-link">
-    <a href="archive.html">
+    <a href="archive">
        ... [  Click here to see more posts ] ...
     </a>
 </div>

@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="A form to contact the author of this site">
     <meta name="author" content="">
 
-    <title></title>
+    <title>Contact Me .  Life as Lisa-Monique </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
@@ -77,8 +77,8 @@
         <div class="collapse navbar-collapse navbar-right">
         <!-- pull-right keeps the drop-down in line -->
             <ul class="nav navbar-nav pull-right">
-                <li><a href="/about.html">About Me</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
         <div class="collapse navbar-collapse navbar-left">
@@ -94,24 +94,47 @@
   <a href="/"><img src="/img/logo2.svg" style="max-width: 400px; margin-left: auto; margin-right: auto; margin-top:-6%; display: block;"></a>
 
 <h2 class=" page-heading">
-    <a href="">About Me</a>
+    <a href="">Contact Me</a>
 </h2>
 
 <div class="row" style="padding: 20px">
     <div class="col-md-4 post-thumbnail" >
-        <img src="/img/DSC_0148.jpg" alt=""  />
+        <img src="/img/DSC_0116.jpg" alt=""  />
     </div>
 
 <div class="col-md-8">
     <div class="about-me">
-        <p style="text-align: center;font-size: 12px; font-family: 'Open Sans'">
-            <p>Welcome to <strong>Life as Lisa-Monique!</strong><br />
-            I'm Lisa and this is my blog. I'm a born and raised St. Lucian currently working towards my undergrad degree in Canada in Bioinformatics (don't worry, nobody knows what that is).</p>
-            <p>That means I'm a young, black, female, West-Indian in a white man's world. And honestly, I'm subliminally reminded of it everyday but that's a topic for another day.</p>
-            <p>I also paint, draw, dance and basically anything else artistic/creative you can think of. Except writing that is, I absolutely hate writing. And I mean writing of all kinds: poems, short stories, essays everything.</p>
-            <p>Then why start a blog you might be wondering? Honestly, I'm not entirely sure. I've wanted to do this for a long time and I finally decided that life is too short to not follow your passions and see where they lead. Hopefully I can use this platform to celebrate the good times, reflect on the bad and share with the world.</p>
-        </p>
-        <p class="signature">-lisa-monique </p>
+
+        <form class="pure-form pure-form-aligned" style="font-size: 14px; font-family: 'Playfair Display';" action="https://formspree.io/lisam.edward@gmail.com"
+      method="POST">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text" placeholder="Name" style="min-width: 50%">
+                    <span class="pure-form-message-inline">This is a required field.</span>
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" name="_replyto" type="email" placeholder="Email Address" style="min-width: 50%">
+                    <span class="pure-form-message-inline">This is a required field.</span>
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="subject">Email Subject</label>
+                    <input id="subject" name="_subject" type="text" placeholder="Subject" style="min-width: 50%">
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" type="text" placeholder="Enter your message here..." style="min-height: 200px; min-width: 50%"></textarea>
+                </div>
+
+                <div class="pure-controls">
+                    <input type="submit" class="pure-button pure-button-primary" value="Send" style="background-color: #F69C9B"></input>
+                </div>
+            </fieldset>
+        </form>
     </div>
 </div>
 

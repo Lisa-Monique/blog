@@ -3,7 +3,7 @@ exclude: ['README.md']
 author: 'Lisa-Monique Edward'
 gems:
   - jekyll-archives
-
+permalink: pretty
 description: "I'm Lisa, Welcome to my life! I'm a St. Lucian currently studying Bioinformatics and Computational Biochemistry in Canada. I'm also an artist who paints, draws and dances. This blog is an attempt to document my successes and struggles as an all-round minority along this journey called life."
 
 jekyll-archives:
