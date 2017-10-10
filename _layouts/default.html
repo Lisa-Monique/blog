@@ -1,18 +1,71 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en-ca">
-<head>
-    <meta charset="utf-8">
-    <title>Life as Lisa-Monique</title>
-</head>
-<body>
-    <h1>Life as Lisa-Monique</h1>
-    <nav>
-        <ul>
-            <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-            <li><a href="{{site.baseurl}}/about.html">About</a></li>
-        </ul>
-    </nav>
-    {{content}}
-</body>
-</html>
+{% include header.html %}
+<div class="default-grad" style="min-height: 100vh">
+  {% include nav.html %}
+  <img src="{{site.baseurl}}/img/logo2.svg" style="max-width: 1000px; margin-left: auto; margin-right: auto; display: block;">
+
+  <a href="#groups" class="scroll-arrow"><span>WELCOME</span></a>
+</div>
+
+<div class="reverse-grad" style="margin-bottom: 70px">
+  <div class="container" id="groups">
+    <div class="row" >
+      <div id="reel" class="clearfix">
+        <div class="container" >
+          
+          <div class="col-md-4">
+            <div class="welcome-image" style="background-image:url(img/IMG_2301.jpg)">
+              <div class="welcome-image-overlay">
+                <a href="{{site.baseurl}}/categories/west-indian-life.html">
+                  <div id="inner1" class="inner">
+                    <h5 id="h5-1">Unappologetic</h5>
+                    <h4 id="h4-1">West Indian</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+                    
+          <div class="col-md-4">
+            <div class="welcome-image" style="background-image:url(img/LisaLion.jpg)">
+              <div class="welcome-image-overlay">
+                <a href=""welcome-image-overlay">
+                <a href="{{site.baseurl}}/categories/art">
+                  <div id="inner2" class="inner">
+                    <h5 id="h5-2">Unrestrained</h5>
+                    <h4 id="h4-2">Artist</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="welcome-image" style="background-image:url(img/IMG_1505.jpg)">
+              <div class="welcome-image-overlay">
+                <a href=""welcome-image-overlay">
+                <a href="{{site.baseurl}}/categories/academic-life">
+                  <div id="inner3" class="inner">
+                    <h5 id="h5-3">Underestimated</h5>
+                    <h4 id="h4-3">Scientist</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8"> 
+      <div class="content-sidebar">
+         {{ content }} 
+      </div>
+  </div>
+  <div class="col-md-4">
+    {% include sidebar.html %}
+  </div>
+</div>
+ 
+{% include footer.html %}

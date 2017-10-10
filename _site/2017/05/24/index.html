@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lato|Merriweather|Mrs+Saint+Delafield|Open+Sans|Playfair+Display|Amatic+SC:700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+  </script>
+
+</head>
+
+<body>
+
+<nav role="navigation" class="navbar navbar-default">
+    <div class="container">
+        <!-- Title -->
+        <div class="navbar-header pull-left">
+        </div>
+
+        <!-- 'Sticky' (non-collapsing) right-side menu item(s) -->
+        <div class="navbar-header pull-right">
+            <ul class="nav pull-left social-links">
+                <li class="navbar-text pull-left"><a href="https://www.instagram.com/_lisxmonique/"><i class="fa fa-instagram"></i></a></li>
+                <li class="navbar-text pull-left"><a href="https://www.facebook.com/lisamonique.edward"><i class="fa fa-facebook"></i></a></li>
+                <li class="navbar-text pull-left"><a href="https://github.com/Lisa-Monique"><i class="fa fa-github"></i></a></li>
+                <li class="navbar-text pull-left"><a href="https://www.linkedin.com/in/lisa-monique-edward-a3054410b/"><i class="fa fa-linkedin"></i></a></li>
+                <li class="navbar-text pull-left"><a href="https://lisa-monique.github.io"><i class="fa fa-link"></i></a></li>
+            </ul>
+
+            <!-- Required bootstrap placeholder for the collapsed menu -->
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Additional navbar items -->
+        <div class="collapse navbar-collapse navbar-right">
+        <!-- pull-right keeps the drop-down in line -->
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="/about.html">About Me</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse navbar-left">
+        <!-- pull-right keeps the drop-down in line -->
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="/categories/life-in-canada">Life in Canada</a></li>
+                <li><a href="/categories/art">Art</a></li>
+                <li><a href="/categories/academic-life">Academic Life</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <a href="/"><img src="/img/logo2.svg" style="max-width: 400px; margin-left: auto; margin-right: auto; margin-top:-6%; display: block;"></a>
+
+  <div class="row">
+  <div class="col-md-8"> 
+      <div class="content-sidebar">
+          
+      </div>
+  </div>
+  <div class="col-md-4">
+    <div class="side-margin">
+    <div id="sidebar" class="widget-area" role="complementary">
+        <div class="widget">
+            <h4 class="widget-title">
+                <span></span>
+            </h4>
+            <div class="about-me">
+                <a href="/index.php?page_id=17">
+                    <img src="/img/IMGP9087.jpg" style="margin-bottom: 8px; height: auto; max-width: 100%">
+                    <p style="text-align: center;font-size: 12px; font-family: 'Open Sans'; padding-top: 10px;">
+                        I'm Lisa, Welcome to my life! I'm a St. Lucian currently studying Bioinformatics and Computational Biochemistry in Canada. I'm also an artist who paints, draws and dances. This blog is an attempt to document my successes and struggles as an all-round minority along this journey called life.
+                        <br>
+                        <strong style="color: #a4e1ce">(Read More...)</strong>
+                    </p>
+                    <p class="signature">-lisa-monique 
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="widget">
+            <h4 class="widget-title">
+                <span>Categories</span>
+            </h4>
+            <div>
+                
+        <li class="cat-item"><a href="/categories/life">life</a></li>
+        
+        <li class="cat-item"><a href="/categories/art">art</a></li>
+        
+        <li class="cat-item"><a href="/categories/academic-life">academic-life</a></li>
+        
+            </div>
+        </div>
+        <div class="widget blog-archive">
+           <h4 class="widget-title" onclick="openDialogue()">
+                <span id="archive-title">Archives</span>
+            </h4>
+            <div id="archive"">
+                <div class="archiveList" style="text-align: left;">
+                <ul style="list-style: none;">
+                    
+                        
+                        <div class="meta-info" style="text-align: left;"><span>August 2017</span></div>
+                        
+
+                        <li ><a href="/academic-life/life/2017/08/03/first-year-reflections.html">- First Year Reflections!</a></li>
+                    
+                        
+                          
+                          
+                          
+                            <div class="meta-info" style="text-align: left;"><span>July 2017</span></div>
+                          
+                        
+
+                        <li ><a href="/art/2017/07/19/valentine.html">- Valentine</a></li>
+                    
+                        
+                          
+                          
+                          
+                        
+
+                        <li ><a href="/art/2017/07/14/julie-mangoes.html">- Julie Mangoes</a></li>
+                    
+                        
+                          
+                          
+                          
+                            <div class="meta-info" style="text-align: left;"><span>May 2017</span></div>
+                          
+                        
+
+                        <li ><a href="/life/2017/05/24/first-post.html">- First Post</a></li>
+                    
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="widget tag-cloud">
+        <h4 class="widget-title">
+            <span>Popular Tags</span>
+        </h4>
+        <!-- cloud tag -->
+        </div>
+    </div>
+</div>
+  </div>
+</div>
+<div style="padding: 0; background: #000000">
+    <?php echo do_shortcode('[instagram-feed]'); ?>
+    <div class="row" style="margin: 0">
+        <footer style="background: #000">
+            <div class="container" style="width: 100%">
+                <div class="np-footer" style="padding: 22px 40px">
+                    <p class="np-meta">Life as Lisa-Monique</p>
+                    <p class="footer-text np-meta" style="margin: 0; float: right;">
+                        Theme developed by <a href="www.lisa-monique.github.io">Lisa-Monique Edward</a>
+                    </p>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+</div>
+
+
+<button class="fa fa-arrow-circle-o-up" onclick="topFunction()" id="top-link" title="Go to top"></button>
+</body></html>

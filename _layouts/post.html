@@ -1,0 +1,58 @@
+{% include header.html %}
+{% include nav.html %}
+  <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/img/logo2.svg" style="max-width: 400px; margin-left: auto; margin-right: auto; margin-top:-6%; display: block;"></a>
+
+  <div class="row">
+  <div class="col-md-8"> 
+    <div class="entry-header">
+        <div class="category">
+            <span class="catindex">
+                <div><a href="{{site.baseurl}}/categories/{{page.categories | first}}">{{page.categories | first}}</a>
+                </div>
+            </span>
+        </div>
+        <h2 class="entry-title">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{page.title}}</a>
+        </h2>
+        <div class="post-meta" style="padding: 10px 0 5px; overflow: hidden;">
+            <span class="meta-info">
+                {{page.date | date: "%-d %B %Y" }} by
+                <a href="/index.php?page_id=13">
+                {{site.author}}</a>
+                <a href=""> 
+                    <i class="fa fa-comments"></i> <!-- comments -->
+                </a>   
+            </span>
+        </div>
+    </div>
+
+      <div class="content-sidebar">
+         <div class="index-fullview">
+    <div class="index-entry" >
+        <div class="post-thumbnail">
+            <img src="{{site.baseurl}}/img/{{page.thumbnail}}">
+        </div>
+        <div class="post-entry">
+            <div class="post-wrapper">
+                
+                <div class="post-summary">
+                    <p>{{page.content}}</p>
+                </div>
+                <div class="index-meta">
+                    <div class="post-meta">
+                        <div class="social-share">
+                            <!-- share button plugin -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+  </div>
+  <div class="col-md-4">
+    {% include sidebar.html %}
+  </div>
+</div>
+{% include footer.html %}

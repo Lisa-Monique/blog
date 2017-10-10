@@ -1,6 +1,60 @@
 ---
 layout: default
 ---
-
-<h1>Welcome!</h1>
-<p>This is my life in words</p>
+{% for post in site.posts limit:5 %}
+<div class="index-fullview">
+    <div class="index-entry" >
+        <div class="post-thumbnail">
+            <a href="{{site.baseurl}}{{ post.url }}">
+            <img src="{{site.baseurl}}/img/{{post.thumbnail}}">
+            </a>
+        </div>
+        <div class="post-entry">
+            <div class="post-wrapper">
+                <div class="entry-header">
+                    <div class="category">
+                        <span class="catindex">
+                            <a href="{{site.baseurl}}/categories/{{post.categories | first}}.html">{{post.categories | first}}</a>
+                        </span>
+                    </div>
+                    <h2 class="entry-title">
+                        <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+                    </h2>
+                    <div class="post-meta" style="padding: 10px 0 5px; overflow: hidden;">
+                        <span class="meta-info">
+                            {{post.date | date: "%-d %B %Y" }} by
+                            <a href="/index.php?page_id=13">
+                            {{site.author}}</a>
+                            <a href=""> 
+                                <i class="fa fa-comments"></i> <!-- comments -->
+                            </a>   
+                        </span>
+                    </div>
+                </div>
+                <div class="post-summary">
+                    <p>{{post.excerpt}}...</p>
+                </div>
+                <div class="index-meta">
+                    <div class="post-meta">
+                        <div class="social-share">
+                            <!-- share button plugin -->
+                        </div>
+                    </div>
+                </div>
+                <div class="readmore readbutton">
+                    <a id="read-name" href="{{ post.url | prepend: site.baseurl }}">
+                    <h3>
+                        Read More...
+                    </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div class="archive-link">
+    <a href="archive.html">
+       ... [  Click here to see more posts ] ...
+    </a>
+</div>

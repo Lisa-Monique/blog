@@ -1,18 +1,139 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en-ca">
+<html lang="en">
+
 <head>
+
     <meta charset="utf-8">
-    <title>Life as Lisa-Monique</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lato|Merriweather|Mrs+Saint+Delafield|Open+Sans|Playfair+Display|Amatic+SC:700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+  </script>
+
 </head>
+
 <body>
-    <h1>Life as Lisa-Monique</h1>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-        </ul>
-    </nav>
-    <h1>About Me</h1>
-</body>
-</html>
+
+<nav role="navigation" class="navbar navbar-default">
+    <div class="container">
+        <!-- Title -->
+        <div class="navbar-header pull-left">
+        </div>
+
+        <!-- 'Sticky' (non-collapsing) right-side menu item(s) -->
+        <div class="navbar-header pull-right">
+            <ul class="nav pull-left social-links">
+                <li class="navbar-text pull-left"><a href="https://www.instagram.com/_lisxmonique/"><i class="fa fa-instagram"></i></a></li>
+                <li class="navbar-text pull-left"><a href="https://www.facebook.com/lisamonique.edward"><i class="fa fa-facebook"></i></a></li>
+                <li class="navbar-text pull-left"><a href="https://github.com/Lisa-Monique"><i class="fa fa-github"></i></a></li>
+                <li class="navbar-text pull-left"><a href="https://www.linkedin.com/in/lisa-monique-edward-a3054410b/"><i class="fa fa-linkedin"></i></a></li>
+                <li class="navbar-text pull-left"><a href="https://lisa-monique.github.io"><i class="fa fa-link"></i></a></li>
+            </ul>
+
+            <!-- Required bootstrap placeholder for the collapsed menu -->
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Additional navbar items -->
+        <div class="collapse navbar-collapse navbar-right">
+        <!-- pull-right keeps the drop-down in line -->
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="/about.html">About Me</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse navbar-left">
+        <!-- pull-right keeps the drop-down in line -->
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="/categories/life-in-canada">Life in Canada</a></li>
+                <li><a href="/categories/art">Art</a></li>
+                <li><a href="/categories/academic-life">Academic Life</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <a href="/"><img src="/img/logo2.svg" style="max-width: 400px; margin-left: auto; margin-right: auto; margin-top:-6%; display: block;"></a>
+
+<h2 class=" page-heading">
+    <a href="">About Me</a>
+</h2>
+
+<div class="row" style="padding: 20px">
+    <div class="col-md-4 post-thumbnail" >
+        <img src="/img/DSC_0148.jpg" alt=""  />
+    </div>
+
+<div class="col-md-8">
+    <div class="about-me">
+        <p style="text-align: center;font-size: 12px; font-family: 'Open Sans'">
+            <p>Welcome to <strong>Life as Lisa-Monique!</strong><br />
+            I'm Lisa and this is my blog. I'm a born and raised St. Lucian currently working towards my undergrad degree in Canada in Bioinformatics (don't worry, nobody knows what that is).</p>
+            <p>That means I'm a young, black, female, West-Indian in a white man's world. And honestly, I'm subliminally reminded of it everyday but that's a topic for another day.</p>
+            <p>I also paint, draw, dance and basically anything else artistic/creative you can think of. Except writing that is, I absolutely hate writing. And I mean writing of all kinds: poems, short stories, essays everything.</p>
+            <p>Then why start a blog you might be wondering? Honestly, I'm not entirely sure. I've wanted to do this for a long time and I finally decided that life is too short to not follow your passions and see where they lead. Hopefully I can use this platform to celebrate the good times, reflect on the bad and share with the world.</p>
+        </p>
+        <p class="signature">-lisa-monique </p>
+    </div>
+</div>
+
+
+</div>
+<div style="padding: 0; background: #000000">
+    <?php echo do_shortcode('[instagram-feed]'); ?>
+    <div class="row" style="margin: 0">
+        <footer style="background: #000">
+            <div class="container" style="width: 100%">
+                <div class="np-footer" style="padding: 22px 40px">
+                    <p class="np-meta">Life as Lisa-Monique</p>
+                    <p class="footer-text np-meta" style="margin: 0; float: right;">
+                        Theme developed by <a href="www.lisa-monique.github.io">Lisa-Monique Edward</a>
+                    </p>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+</div>
+
+
+<button class="fa fa-arrow-circle-o-up" onclick="topFunction()" id="top-link" title="Go to top"></button>
+</body></html>

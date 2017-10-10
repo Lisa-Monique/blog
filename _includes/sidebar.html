@@ -1,0 +1,61 @@
+<div class="side-margin">
+    <div id="sidebar" class="widget-area" role="complementary">
+        <div class="widget">
+            <h4 class="widget-title">
+                <span>{{site.title}}</span>
+            </h4>
+            <div class="about-me">
+                <a href="/index.php?page_id=17">
+                    <img src="{{site.baseurl}}/img/IMGP9087.jpg" style="margin-bottom: 8px; height: auto; max-width: 100%">
+                    <p style="text-align: center;font-size: 12px; font-family: 'Open Sans'; padding-top: 10px;">
+                        {{site.description}}
+                        <br>
+                        <strong style="color: #a4e1ce">(Read More...)</strong>
+                    </p>
+                    <p class="signature">-lisa-monique 
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="widget">
+            <h4 class="widget-title">
+                <span>Categories</span>
+            </h4>
+            <div>
+                {% for category in site.categories %}
+        <li class="cat-item"><a href="{{site.baseurl}}/categories/{{category | first}}">{{ category | first }}</a></li>{% unless forloop.last %}{% endunless %}
+        {% endfor %}
+            </div>
+        </div>
+        <div class="widget blog-archive">
+           <h4 class="widget-title" onclick="openDialogue()">
+                <span id="archive-title">Archives</span>
+            </h4>
+            <div id="archive"">
+                <div class="archiveList" style="text-align: left;">
+                <ul style="list-style: none;">
+                    {% for post in site.posts limit:15%}
+                        {% unless post.next %}
+                        <div class="meta-info" style="text-align: left;"><span>{{ post.date | date: '%B %Y' }}</span></div>
+                        {% else %}
+                          {% capture month %}{{ post.date | date: '%B %Y' }}{% endcapture %}
+                          {% capture nmonth %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
+                          {% if month != nmonth %}
+                            <div class="meta-info" style="text-align: left;"><span>{{ post.date | date: '%B %Y' }}</span></div>
+                          {% endif %}
+                        {% endunless %}
+
+                        <li ><a href="{{ post.url }}">- {{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="widget tag-cloud">
+        <h4 class="widget-title">
+            <span>Popular Tags</span>
+        </h4>
+        <!-- cloud tag -->
+        </div>
+    </div>
+</div>

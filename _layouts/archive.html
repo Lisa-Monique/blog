@@ -1,0 +1,15 @@
+{% include header.html %}
+{% include nav.html %}
+  <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/img/logo2.svg" style="max-width: 400px; margin-left: auto; margin-right: auto; margin-top:-6%; display: block;"></a>
+
+  <div class="row">
+  <div class="col-md-8"> 
+      <div class="content-sidebar">
+         {{ content }} 
+      </div>
+  </div>
+  <div class="col-md-4">
+    {% include sidebar.html %}
+  </div>
+</div>
+{% include footer.html %}
