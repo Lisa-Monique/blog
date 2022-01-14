@@ -12,6 +12,19 @@
     outline: 0;
     border-color: #F69C9B
 }
+.passwdpg {
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.1);
+    padding: 5%;
+}
+.passwdpg h2 {
+    color: #406802; 
+    font-family: Lato;
+}
+.passwdpg p {
+    color: #5ea502; 
+    font-family: Lato;
+}
 .logo2{
     max-width: 900px;
     width: 100%;
